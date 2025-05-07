@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App - India Villages Support</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Real-Time Weather API</h1>
+    
+    </header>
+
+    <section class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city or village name" />
+      <button onclick="getWeather()">Get Weather</button>
+    </section>
+
+<section id="weatherResult" class="weather-card hidden">
+  <h2 id="cityName"></h2>
+  <img id="weatherIcon" src="https://i.ibb.co/Myd62M1X/cloudy.png" alt="Weather Icon" />
+  <p id="description"></p>
+  <p id="temperature"></p>
+
+  <div class="metric">
+    <img src="https://i.ibb.co/q3cTqhrR/flood.png" alt="Humidity" />
+    <span id="humidity"></span>
+  </div>
+  <div class="metric">
+    <img src="https://i.ibb.co/JF3hrRhk/8691412.png" alt="Pressure" />
+    <span id="pressure"></span>
+  </div>
+  <div class="metric">
+    <img src="https://i.ibb.co/4n4NkHwJ/clouds.png" alt="Clouds" />
+    <span id="clouds"></span>
+  </div>
+  <div class="metric">
+    <img src="https://i.ibb.co/Z6FY381S/wind.png" alt="Wind Speed" />
+    <span id="wind"></span>
+  </div>
+  <div class="sky">
+    <div class="sun"></div>
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+  </div>
+</section>
+    <p id="errorMessage" class="error hidden"></p>
+
+    <section class="about">
+      <h3>About This Project</h3>
+      <p>This weather app fetches real-time climate information using the OpenWeatherMap API.
+         It supports city and Indian village names. Built using HTML, CSS, and JavaScript, it's ideal for projects,
+         demonstrations, and real-world use with light modifications.</p>
+      <ul>
+        <li>API used: OpenWeatherMap</li>
+        <li>Language: JavaScript</li>
+        <li>Frontend: HTML & CSS</li>
+        <li>Features: Real-time weather, icons, error handling</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
